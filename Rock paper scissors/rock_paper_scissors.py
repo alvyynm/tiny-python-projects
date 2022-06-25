@@ -7,12 +7,8 @@ def play():
     
     def game(user, opponent):
         ''' Determines who wins the game (r>s s>p p>r) '''
-        if (user == 'r' and opponent == 's'):
+        if (user == 'r' and opponent == 's') or (user == 's' and opponent == 'p') or (user == 'p' and opponent == 'r'):
             print("You win!")
-        elif (user == 's' and opponent == 'p'):
-            print("You win")
-        elif (user == 'p' and opponent == 'r'):
-            print("You win")
         elif (user == opponent):
             print("It's a draw")
         else:
